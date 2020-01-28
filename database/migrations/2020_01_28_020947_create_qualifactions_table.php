@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQualifactionsTable extends Migration
+class CreateQualificationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateQualifactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('qualifactions', function (Blueprint $table) {
+        Schema::create('qualifications', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('level')->nullable();
@@ -33,6 +33,6 @@ class CreateQualifactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('qualifactions');
+        Schema::dropIfExists('qualifications');
     }
 }
