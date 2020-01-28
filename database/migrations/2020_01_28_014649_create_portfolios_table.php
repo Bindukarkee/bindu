@@ -20,7 +20,7 @@ class CreatePortfoliosTable extends Migration
             $table->text('short_description')->nullable();
             $table->longText('description')->nullable();
             $table->string('image')->nullable();
-            $tabl->string('url')->nullable();
+            $table->string('url')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();
         });
