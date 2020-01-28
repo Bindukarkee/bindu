@@ -18,8 +18,8 @@ class CreateCategoriesTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('description')->nullable();
-            $table->unsignedBigInteger('category_id');
-            $table->string('category_type');
+            $table->unsignedBigInteger('categorizable_id');
+            $table->string('categorizable_type');
             $table->boolean('status')->default(0);
             $table->timestamps();
         });

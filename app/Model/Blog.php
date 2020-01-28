@@ -8,7 +8,7 @@ class Blog extends Model
 {
     //
     protected $table = 'blogs';
-    protected $fillable = ['title','image','description','status'];
+    protected $fillable = ['title','slug','short_description','image','description','status'];
 
     public function cat()
     {
