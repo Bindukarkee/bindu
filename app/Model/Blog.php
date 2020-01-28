@@ -10,8 +10,8 @@ class Blog extends Model
     protected $table = 'blogs';
     protected $fillable = ['title','slug','short_description','image','description','status'];
 
-    public function cat()
+    public function category()
     {
-        return $this->morphOne(Category::class,'category');
+        return $this->morphOne(Category::class,'categorizable');
     }
 }

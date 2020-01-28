@@ -10,8 +10,8 @@ class Portfolio extends Model
     protected $table = 'portfolios';
     protected $fillable = ['title','slug','short_description','description','image','url','status'];
 
-    public function cat()
+    public function category()
     {
-        return $this->morphOne(Category::class,'category');
+        return $this->morphOne(Category::class,'categorizable');
     }
 }
