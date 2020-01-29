@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Model\Portfolio;
 
 class PortfoliosTableSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class PortfoliosTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+       factory(Portfolio::class,10)->create();
     }
 }
